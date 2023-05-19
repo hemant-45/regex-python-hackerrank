@@ -1,0 +1,23 @@
+# The variable regex_pattern is defined as the regular expression pattern r"[\,\.]". This pattern matches either a comma or a period (dot).
+
+# The re module is imported, which provides support for regular expressions in Python.
+
+# The input() function is called to prompt the user to enter a string.
+
+# The re.split() function is used to split the input string based on the regular expression pattern. It separates the string at every occurrence of a comma or period.
+
+# The resulting split parts are passed as arguments to the join() method, which joins the parts into a single string separated by newline characters ("\n").
+
+# The resulting joined string is printed to the console.
+
+# In summary, the code takes user input, splits the input string based on occurrences of commas or periods, and then prints the split parts on separate lines.
+
+
+===================================================
+
+regex_pattern = r"[\,\.]"	# Do not delete 'r'.
+
+import re
+print("\n".join(re.split(regex_pattern, input())))
+
+===================================================
