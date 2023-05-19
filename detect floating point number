@@ -1,0 +1,33 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+===================================================================
+
+import re
+
+n = int(input())
+        
+for i in range(n):
+    num = input()
+    print(bool(re.match(r'^[-+]?[0-9]*\.[0-9]+$', num)))
+    
+===================================================================    
+    
+# The code begins by importing the re module, which provides support for regular expressions in Python.
+
+# The variable n is defined as an integer obtained from user input using the input() function. This value represents the number of inputs the user wants to provide.
+
+# A for loop is used to iterate n times. In each iteration, the loop performs the following steps:
+
+# The variable num is defined as a string obtained from user input using the input() function. This value represents the number to be analyzed.
+
+# The re.match() function is called to check if the num string matches a specific pattern. The pattern being matched is r'^[-+]?[0-9]*\.[0-9]+$'.
+
+# ^ denotes the start of the string.
+# [-+]? allows for an optional plus or minus sign at the beginning of the number.
+# [0-9]* allows for zero or more digits before the decimal point.
+# \. matches the decimal point itself.
+# [0-9]+ matches one or more digits after the decimal point.
+# $ denotes the end of the string.
+# The result of re.match() is passed as an argument to the bool() function, which converts the result to a boolean value. bool() returns True if there is a match and False otherwise.
+
+# The boolean value is then printed to the console.    
